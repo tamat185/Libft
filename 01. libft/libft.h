@@ -6,7 +6,7 @@
 /*   By: ecosting <ecosting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 15:28:46 by ecosting          #+#    #+#             */
-/*   Updated: 2021/10/23 15:28:49 by ecosting         ###   ########.fr       */
+/*   Updated: 2021/11/09 20:03:11 by ecosting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char		*ft_strrchr(const char *s, int c);
 char		*ft_strdup(const char *s);
 char		*ft_strndup(const char *s, size_t n);
 char		*ft_strcdup(const char *s, int c);
-char		*ft_strcpy(char *dst, const char *src);
+//char		*ft_strcpy(char *dst, const char *src);
 char		*ft_strncpy(char *dest, const char *src, size_t n);
 char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strnstr(const char *haystack, const char *needle, size_t len);
