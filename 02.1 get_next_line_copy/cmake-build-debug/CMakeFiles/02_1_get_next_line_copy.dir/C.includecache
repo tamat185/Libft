@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/get_next_line_bonus.c
+stdio.h
+-
+get_next_line_bonus.h
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/get_next_line_bonus.h
+
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/get_next_line_bonus.h
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/get_next_line_utils_bonus.c
+get_next_line_bonus.h
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/get_next_line_bonus.h
+stdio.h
+-
+

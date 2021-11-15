@@ -1,0 +1,3 @@
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ecosting/Desktop/Osnova/tamat/02.1 get_next_line_copy/cmake-build-debug/CMakeFiles/02_1_get_next_line_copy.dir
