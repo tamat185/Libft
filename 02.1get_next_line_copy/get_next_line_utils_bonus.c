@@ -1,4 +1,5 @@
 #include "get_next_line_bonus.h"
+#include <stdio.h>
 
 void	ft_strcpy(char *dst, char *src)
 {
@@ -26,6 +27,7 @@ char    *make_line_from_remainder(char **remainder, char **line)
 	// fflush(stdout);
     if (*remainder)
     {
+		//printf("*remainded: %s", *remainder);
         if ((pointer_to_n = ft_strchr(*remainder, '\n')))
         {
             *pointer_to_n = '\0';
@@ -37,12 +39,15 @@ char    *make_line_from_remainder(char **remainder, char **line)
         }
         else
 		{
+			//printf("we are in else without n\n");
             *line = ft_strdup(*remainder);
 			//free(*remainder);
+			*remainder = NULL;
 		}
     }
     else
 	{
+		//printf("we are in else with ft_calloc\n");
         *line = ft_calloc(1, 1, '\0');
 		if (!(*line))
 			return (NULL);
