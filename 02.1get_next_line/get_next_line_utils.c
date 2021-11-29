@@ -15,33 +15,32 @@ void	ft_strcpy(char *dst, char *src)
 
 char    *make_line_from_remainder(char **remainder, char **line)
 {
-    char    *pointer_to_n;
+	char	*pointer_to_n;
 	char	*c;
 
-    c = "\n";
+	c = "\n";
 	pointer_to_n = NULL;
-    if (*remainder)
-    {
-        if ((pointer_to_n = ft_strchr(*remainder, '\n')))
-        {
-            *pointer_to_n = '\0';
+	if (*remainder)
+	{
+		if ((pointer_to_n = ft_strchr(*remainder, '\n')))
+		{
+			*pointer_to_n = '\0';
 			if (pointer_to_n == remainder[0])
 				*line = ft_calloc(1, 1, '\n');
 			else
-            	//*line = ft_strdup(*remainder);
 				*line = ft_strjoin(*remainder, c);
-            ft_strcpy(*remainder, pointer_to_n + 1);
-        }
-        else
-		{
-            *line = ft_strdup(*remainder);
-			*remainder = NULL;
-			//free(*remainder);
+			ft_strcpy(*remainder, pointer_to_n + 1);
 		}
-    }
-    else
-        *line = ft_calloc(1, 1, '\0');
-    return (pointer_to_n);
+		else
+		{
+			*line = ft_strdup(*remainder);
+			*remainder = NULL;
+			free(*remainder);
+		}
+	}
+	else
+		*line = ft_calloc(1, 1, '\0');
+	return (pointer_to_n);
 }
 
 char	*ft_strdup(const char *s1)

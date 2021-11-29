@@ -8,13 +8,14 @@
 			"name": "clang - Build and debug active file",
 			"type": "cppdbg",
 			"request": "launch",
-			"program": "${workspaceFolder}/02.1get_next_line/a.out",
+			"program": "${workspaceFolder}/a.out",
 			"args": [],
 			"stopAtEntry": false,
-			"cwd": "${workspaceFolder}/02.1get_next_line",
+			"cwd": "${workspaceFolder}",
 			"environment": [],
 			"externalConsole": false,
-			"MIMode": "lldb"
+			"MIMode": "lldb",
+			"preLaunchTask": "C/C++: clang build active file"
 		}
 	]
 }
